@@ -1,0 +1,62 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.tempula {
+  background-color: #252830;
+
+  & label {
+    display: block;
+
+    &.message {
+      padding: 0 0 0.1em 0.1em;
+      transform: rotateX(0);
+      &.success,
+      &.failure {
+        transition: transform 0.5s ease-out;
+      }
+      &.success {
+        color: rgb(121, 255, 199);
+        transform: rotateX(360deg);
+      }
+      &.failure {
+        color: rgb(255, 110, 110);
+        transform: rotateX(-360deg);
+      }
+    }
+  }
+
+  & ul {
+    border: 1px solid #181a1f;
+    background-color: #292d35;
+
+    position: relative;
+    overflow-y: auto;
+    max-height: 312px;
+    margin: 10px 0 0 0;
+    padding: 0;
+
+    list-style: none;
+
+    & li {
+      padding: 0.75em 1em;
+      line-height: 2em;
+      border-bottom: 1px solid #181a1f;
+      color: #9da5b4;
+
+      white-space: nowrap;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #3a3f4b;
+        color: #d7dae0;
+      }
+      &:active {
+        color: transparent;
+        text-shadow: 0 1px #d7dae0;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "context-menu": {
+    ".header.list-item": [
+      {
+        "label": "New file by tempula",
+        "command": "tempula:new"
+      }
+    ]
+  }
+}
