@@ -78,6 +78,16 @@ export default {
 
 ###### 実行
 
+```
+▼ project
+├ ▼ .tempula
+│ ├ template-full.vue
+│ ├ template-light.vue
+│ └ template.html
+├ □ dist
+├ □ node_modules
+└ □ source
+```
 1. ツリービューで、配下にファイルを生成したいディレクトリを右クリック
 1. `New file by tempula`をクリック(すると、サンプル画像のダイアログが表示される)
 1. テキストボックスに新規ファイル名(拡張子は不要)を入力
